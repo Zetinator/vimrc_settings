@@ -1,3 +1,4 @@
+
 " vimrc settings by erickzetinator :)
 
 
@@ -73,7 +74,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
-Plugin 'valloric/youcompleteme'
+Plugin 'dart-lang/dart-vim-plugin'
+
+" Plugin 'valloric/youcompleteme'
 
 
 " All of your Plugins must be added before the following line
@@ -103,4 +106,8 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smarttab
+
+"shut up SYNTASTIC
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
+noremap <C-w>e :SyntasticCheck<CR>
 
