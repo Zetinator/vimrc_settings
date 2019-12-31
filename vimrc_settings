@@ -75,16 +75,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ludovicchabant/vim-gutentags'
+"Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'pangloss/vim-javascript'
 Plugin 'ap/vim-css-color'
 Plugin 'maxmellon/vim-jsx-pretty'
-
-
-
-
-
-" Plugin 'valloric/youcompleteme'
+Plugin 'bfrg/vim-cpp-modern'
 
 
 " All of your Plugins must be added before the following line
@@ -114,9 +109,7 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smarttab
-
-"shut up SYNTASTIC
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
-noremap <C-w>e :SyntasticCheck<CR>
-"...tags ans shit
-m
+"
+"auto run python
+"autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+autocmd FileType python nnoremap <buffer> <F5> <Esc>:w !python %<CR>
