@@ -99,7 +99,7 @@ filetype plugin indent on    " required
 
 
 " my stuff
-set number
+"set number
 set hlsearch
 set wildmenu
 
