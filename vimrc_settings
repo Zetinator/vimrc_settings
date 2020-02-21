@@ -80,6 +80,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'ap/vim-css-color'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'bfrg/vim-cpp-modern'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 
 " All of your Plugins must be added before the following line
